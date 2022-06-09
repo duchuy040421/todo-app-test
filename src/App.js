@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Input from './components/input'
+import Task from './components/task';
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container is-flex is-justify-content-center is-align-items-center">
+      <div className="wrap column is-half">
+        <div className="is-flex p-6">
+          <Input/>
+        </div>
+        <div className="list p-6 is-full column">
+          <Task/>
+        </div>
+      </div>
     </div>
   );
 }
